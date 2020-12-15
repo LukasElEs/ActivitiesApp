@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void findActivities(View v) {
-       // get id
         setContentView(R.layout.activity_result_page);
     }
 }
