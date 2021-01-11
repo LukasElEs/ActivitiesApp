@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:hint="@string/activity_name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="199dp"
+            android:hint="@string/activity_description" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="199dp"
+            android:hint="@string/activity_tags" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:onClick="createActivity"
+        android:text="@string/save_btn"
+        app:layout_anchor="@+id/view_pager"
+        app:layout_anchorGravity="bottom|center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

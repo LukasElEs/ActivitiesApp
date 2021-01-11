@@ -2,8 +2,6 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.viewpager.widget.ViewPager;
@@ -13,7 +11,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import java.sql.*;
+
 import com.example.myapplication.ui.main.SectionsPagerAdapter;
+
+import Database.PostgreSQLJDBC;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,35 +26,17 @@ public class MainActivity extends AppCompatActivity {
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         RelativeLayout viewPager = findViewById(R.id.view_pager);
         TabLayout tabs = findViewById(R.id.browse_tab);
-        Button onePerson = findViewById(R.id.onePlayer);
-        Button twoToFour = findViewById(R.id.twoToFour);
-        Button fiveOrMore = findViewById(R.id.fiveOrMore);
 
-
-        onePerson.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.activity_result_page);
-            }
-        });
-
-        twoToFour.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.activity_result_page);
-            }
-        });
-
-        fiveOrMore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.activity_result_page);
-            }
-        });
 
     }
 
     public void findActivities(View v) {
         setContentView(R.layout.activity_result_page);
     }
+    public void createActivity(View v) {
+        setContentView(R.layout.activity_add);
+    }
+    //Class.forName("org.postgresql.Driver");
+
+
 }
