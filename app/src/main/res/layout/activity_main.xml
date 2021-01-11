@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="createActivity"
+        app:layout_anchor="@+id/view_pager"
+        app:layout_anchorGravity="end|bottom"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:focusable="true"
+        android:contentDescription="TODO"
+        />
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -19,44 +32,7 @@
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="640dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <RelativeLayout
-        android:id="@+id/buttonPanel"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_centerInParent="true"
-        >
-            <Button
-            android:id="@+id/twoToFour"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="2-4"
-            android:layout_centerInParent="true"
-            android:onClick="findActivities"
-            />
-
-            <Button
-            android:id="@+id/onePlayer"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="1"
-            android:layout_alignParentLeft="true"
-                android:onClick="findActivities"
-
-                />
-
-            <Button
-            android:id="@+id/fiveOrMore"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentRight="true"
-            android:text="5+"
-                android:onClick="findActivities"
-                />
-
-    </RelativeLayout>
-        </RelativeLayout>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/search_tab"
@@ -77,4 +53,11 @@
             android:text="@string/browse_tab" />
 
     </com.google.android.material.tabs.TabLayout>
+
+    <SearchView
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/view_pager"
+        app:layout_anchorGravity="center" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -7,4 +7,33 @@
     <string name="search_button">Search</string>
     <string name="FirstActivity">Lorem Ipsum valcas cLorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVSLorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVS Lorem Ipsum valcanhasoc NA[ cnasoc naLorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVSLorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVS Lorem Ipsum valcaoCNSDBVSLorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVS Lorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVS Lorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVS</string>
     <string name="SecondActivity">Lorem Ipsum valcasorem Ipsum valcas cLorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVSLorem Ipsum valcas cnhasoc Norem Ipsum valcas cLorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVSLorem Ipsum valcasA[ cnasoc naoCNSDBVSLorem Ipsum valorem Ipsum valcas cLorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVSLorem Ipsum valcascas cnhasoc NA[ cnasoc naoCNSDBVS Lorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVS Lorem Ipsum valcas cnhasoc NA[ cnasoc naoCNSDBVS</string>
+    <!-- ActivitiesSummary-->
+    <string name="activity_summary_name">Test</string>
+    <string name="title_activity_add">AddActivity</string>
+    <!-- activity-->
+    <string name="activity_name">Activity name</string>
+    <string name="activity_description">Activity description, link etc.</string>
+    <string name="activity_tags">Do you want to add tags?</string>
+    <string name="save_btn">SAVE</string>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
 </resources>
